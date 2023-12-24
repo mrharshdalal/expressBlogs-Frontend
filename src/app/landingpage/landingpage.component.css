@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  padding: 3% 0;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* all similar content styling codes */
+.max-width {
+  max-width: 1400px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/* header styling */
+.header-logo {
+  color: white;
+  font-family: Poppins;
+  font-size: 30px;
+  margin-bottom: 0px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 75px */
+  align-items: center;
+  justify-content: center;
+}
+.nav-menu {
+  color: var(--primary-text);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header-button {
+  display: flex;
+  height: 48px;
+  padding: 16px;
+  align-items: center;
+  gap: 2px;
+}
+
+.home {
+  display: flex;
+  background: url("../../assets/landing-background.png") no-repeat center;
+  height: 100%;
+  color: #fff;
+  /* min-height: 500px; */
+  padding: 2% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Poppins";
+}
+.home .text1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--Brand-color, #072664);
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  padding-top: 40%;
+  font-weight: 500;
+  line-height: 120%; /* 60px */
+}
+.home .button {
+  display: inline-flex;
+  z-index: 999;
+  padding: 16px 36px;
+  align-items: center;
+  gap: 16px;
+  border-radius: 8px;
+  background: var(--Brand-color, #072664);
+  text-decoration: #fff;
+}
+.home .grid1 {
+  z-index: -100;
+  margin-left: -10%;
+  margin-top: -3%;
+}
+.home .img-contain {
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+.home .girl-img {
+  z-index: 999;
+}
+.home .grid2 {
+  margin-top: -30%;
+  /* padding-top: -20%; */
+}
+.home .grid3 {
+  z-index: -1;
+  margin-right: -20%;
+  margin-bottom: -20%;
+}
+
+/* trending section */
+.trending-text {
+  color: #1b1b1b;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 45px */
+}
+.viewall-text {
+  color: #ff964a;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.trending-numbers {
+  color: rgba(128, 151, 211, 0.48);
+  font-family: Inter;
+  font-size: 67px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 100.5px */
+}
+.trending-hashtags {
+  color: rgba(128, 151, 211, 0.64);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.trending-title {
+  color: var(--primary-text, #232323);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 31.2px */
+}
+.trending-username {
+  color: var(--secondary, #565656);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.trending-time {
+  color: var(--tertiary, #b9b9b9);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* editor's pick */
+.editor-text {
+  color: #1b1b1b;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 45px */
+}
+.viewall-text {
+  color: #ff964a;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.editors-username {
+  color: var(--secondary, #565656);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.editors-hashtags {
+  color: rgba(128, 151, 211, 0.64);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.editors-title {
+  color: var(--primary-text, #232323);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 31.2px */
+}
+.editors-time {
+  color: var(--tertiary, #b9b9b9);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* discover more */
+.discover-text {
+  color: #1b1b1b;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 45px */
+}
+.viewall-text {
+  color: #ff964a;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.discover-username {
+  color: var(--secondary, #565656);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.discover-hashtags {
+  color: rgba(128, 151, 211, 0.64);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.discover-title {
+  color: var(--primary-text, #232323);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 31.2px */
+}
+.discover-time {
+  color: var(--tertiary, #b9b9b9);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+/* latest */
+.latest-hashtags {
+  color: rgba(128, 151, 211, 0.64);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.latest-title {
+  color: var(--primary-text, #232323);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 48px */
+}
+.latest-content {
+  color: var(--secondary, #565656);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+.read-more {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  background: var(
+    --accent-color,
+    linear-gradient(298deg, #ffa012 -12.67%, rgba(255, 153, 0, 0.93) 64.7%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.latest-time {
+  color: var(--tertiary, #b9b9b9);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.latest-heading {
+  color: var(--primary-text, #232323);
+  font-family: "Poppins";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 57px */
+}
+.latest-username2 {
+  color: var(--secondary, #565656);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.latest-hashtags2 {
+  color: rgba(128, 151, 211, 0.64);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.latest-title2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+}
+
+/* footer */
+.footer-container {
+  background: #072664;
+  padding: 4% 0;
+}
+.footer-logo {
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 75px */
+  color: #fff;
+}
+.footer-text {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer ul {
+  list-style-type: none;
+}
+.footer-links {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 186.3%; /* 29.808px */
+}
+.social {
+  display: flex;
+}
+.footer-img-container {
+  width: 40px; /* Set the width of the container */
+  height: 40px;
+  background-color: white; /* Set the background color to white */
+  border-radius: 50%; /* Create a circular shape */
+  overflow: hidden; /* Hide overflowing content (in case the image is larger than the container) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright {
+  color: #fff;
+  justify-content: center;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 190.6%; /* 24.778px */
+  text-align: center;
+}
