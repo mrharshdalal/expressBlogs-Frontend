@@ -12,8 +12,8 @@ import { Router } from '@angular/router';
 })
 export class SigninComponent {
   user: any;
-  userEmail: string = '';
-  userPassword: string = '';
+    userEmail: string = '';
+    userPassword: string = '';
 
   constructor(
     private signinService: SigninService, 
